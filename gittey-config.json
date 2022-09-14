@@ -24,6 +24,15 @@
         }
     },
     "verboseMode": false,
-    "aliases": [],
+    "aliases": [
+        {
+            "name": "test:PS",
+            "command": "cls;powershell \"python -m unittest discover -v test\" && gittey commit"
+        },
+        {
+            "name": "test:CMD",
+            "command": "cls;test.cmd && gittey commit"
+        }
+    ],
     "collaborators": []
 }
