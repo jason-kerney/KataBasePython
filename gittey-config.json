@@ -27,11 +27,18 @@
     "aliases": [
         {
             "name": "test:PS",
-            "command": "cls;powershell \"python -m unittest discover -v test\" && gittey commit"
+            "command": "cls;powershell \"python -m unittest discover -v test\" && gittey commit",
+            "description": "runs the tests using powershell"
         },
         {
             "name": "test:CMD",
-            "command": "cls;test.cmd && gittey commit"
+            "command": "cls;test.cmd && gittey commit",
+            "description": "runs the tests using command prompt"
+        },
+        {
+            "name": "undo",
+            "command": "git reset; git checkout .; git clean -xfd",
+            "description": "resets directory to last commit"
         }
     ],
     "collaborators": []
